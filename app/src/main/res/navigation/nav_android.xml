@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_android"
+    app:startDestination="@id/home_fragment">
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.mvi.ui.fragment.HomeFragment"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+    <fragment android:id="@+id/officialAccount_fragment"
+        android:name="com.example.mvi.ui.fragment.OfficialAccountFragment"
+        tools:layout="@layout/fragment_official_account">
+    </fragment>
+    <fragment android:id="@+id/project_fragment"
+        android:name="com.example.mvi.ui.fragment.ProjectFragment"
+        tools:layout="@layout/fragment_project">
+
+    </fragment>
+    <fragment
+        android:id="@+id/square_fragment"
+        android:name="com.example.mvi.ui.fragment.SquareFragment"
+        tools:layout="@layout/fragment_square">
+
+    </fragment>
+    <fragment android:id="@+id/system_fragment"
+        android:name="com.example.mvi.ui.fragment.SystemFragment"
+        tools:layout="@layout/fragment_system">
+    </fragment>
+    <fragment android:id="@+id/test_fragment"
+        android:name="com.example.mvi.ui.fragment.testFragment"
+        tools:layout="@layout/fragment_test"/>
+
+
+</navigation>

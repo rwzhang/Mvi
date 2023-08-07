@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragment.HomeFragment">
+
+    <data>
+
+    </data>
+
+<!--    <com.scwang.smart.refresh.layout.SmartRefreshLayout-->
+<!--        android:id="@+id/layout_refresh"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:srlEnableHeaderTranslationContent="false"-->
+<!--        app:srlEnableNestedScrolling="true"-->
+<!--        app:srlEnablePreviewInEditMode="false"-->
+<!--        app:srlEnableRefresh="true"-->
+<!--        app:srlFooterTriggerRate="0.3"-->
+<!--        app:srlHeaderTriggerRate="0.3">-->
+
+<!--        <com.scwang.smart.refresh.header.ClassicsHeader-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <include
+                android:id="@+id/include_head"
+                layout="@layout/include_head" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager_banner"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_150"
+                android:orientation="horizontal"
+                android:scrollbars="none"
+                android:overScrollMode="never"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/include_head" />
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/recyclerView_content"-->
+<!--                android:layout_width="@dimen/dp_0"-->
+<!--                android:layout_height="@dimen/dp_0"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/viewPager_banner" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        <com.scwang.smart.refresh.footer.ClassicsFooter-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--    </com.scwang.smart.refresh.layout.SmartRefreshLayout>-->
+</layout>
